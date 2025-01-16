@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  **************************
+      Table of Contents
+        1. Global Styling
+        2. Typography
+        3. Layout
+        4. Utility Classes
+    ************************** */
+
+/*  ***********************
+       1. Global Styling
+    *********************** */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 20px;
+}
+
+/*  *******************
+	   2. Typography
+	******************* */
+.card {
+    background: #9EC5AB;
+    color: #01200F;
+    border: 6px solid #01200F;
+    animation: border-move 4s infinite;
+}
+
+@keyframes border-move {
+    50% {
+        border-color: #69cec4;
+    }
+}
+
+.buscard_img {
+    border: 2px solid #32746D;
+    border-radius: 15%;
+    box-shadow: 5px 5px #01200F;
+}
+
+#h3-hover:hover {
+    transition-duration: 1s;
+    font-size: 24px;
+}
+
+#h3-hover {
+    transition-duration: 1s;
+
+}
+
+/*  ***************
+	   3. Layout
+	*************** */
+.card {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.buscard_img {
+    width: 150px;
+}
+
+.card-details {
+    margin: auto 0;
+}
+
+/*  ************************
+       4. Utility classes
+    ************************ */
+/* .italic {
+    font-style: italic;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+.background-lightblue {
+    background-color: lightblue;
+} */
